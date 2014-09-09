@@ -1,0 +1,22 @@
+require 'geography_client/version'
+require 'active_resource'
+
+module AeroAPI
+
+  class AeroGeographyProvider < ActiveResource::Base
+    self.site = "http://localhost:6661/api/v1"
+  end
+
+  class Region < AeroOperatorProvider
+  end
+
+  class Destination < AeroOperatorProvider
+  end
+
+  class Area < AeroOperatorProvider
+  end
+
+  class Country < AeroOperatorProvider
+  end
+
+end
