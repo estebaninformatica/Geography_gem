@@ -1,4 +1,4 @@
-# AeroOperatorProviderClient
+# AeroGeographyClient
 
 TODO: Write a gem description
 
@@ -6,19 +6,54 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'operator_provider_client'
-
+    gem 'geography_client', path: '(*)/operadorPrestador_gem'
+    
+    (*) = path a la gem
+    
 And then execute:
 
     $ bundle
 
 Or install it yourself as:
 
-    $ gem install operator_provider_client
+    $ gem install geography_client
 
 ## Usage
+  Add in the model:
+  
+ 
+ * Operator.rb
+ ```ruby
+class Area < AeroAPI::Area
+end
+```
 
-TODO: Write usage instructions here
+ * Provider.rb
+  ```ruby
+class Country < AeroAPI::Country
+end
+```
+
+ * Provider.rb
+  ```ruby
+class Destination < AeroAPI::Destination
+end
+```
+
+ * Provider.rb
+  ```ruby
+class Region< AeroAPI::Region
+end
+```
+
+Ej:
+
+  ```ruby
+Region.find(1)
+Destination.all
+
+```
+Las regiones tienen paises, los paises tiene areas(Ciudades), las areas tiene destinos.
 
 ## Contributing
 
