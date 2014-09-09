@@ -22,25 +22,25 @@ Or install it yourself as:
   Add in the model:
   
  
- * Operator.rb
+ * Area.rb
  ```ruby
 class Area < AeroAPI::Area
 end
 ```
 
- * Provider.rb
+ * Country.rb
   ```ruby
 class Country < AeroAPI::Country
 end
 ```
 
- * Provider.rb
+ * Destination.rb
   ```ruby
 class Destination < AeroAPI::Destination
 end
 ```
 
- * Provider.rb
+ * Region.rb
   ```ruby
 class Region< AeroAPI::Region
 end
